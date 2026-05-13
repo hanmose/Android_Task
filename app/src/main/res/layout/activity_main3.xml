@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    android:background="#1C1C1E"> <!-- 다크 배경 강제 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Routine"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/editRoutineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Routine Name"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <NumberPicker
+            android:id="@+id/pickerHour"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:theme="@android:style/Theme.Holo.NoActionBar"/> <!-- 구형 테마가 다크에서 숫자색이 더 잘보임 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hr"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="15dp" />
+
+        <NumberPicker
+            android:id="@+id/pickerMin"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:theme="@android:style/Theme.Holo.NoActionBar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmitRoutine"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="ADD ROUTINE" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/editTodoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="투두 내용 입력" />
+    <Button
+        android:id="@+id/btnSubmitTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="투두 추가하기" />
+</LinearLayout>
