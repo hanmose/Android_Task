@@ -59,14 +59,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 배경을 완전한 다크 그레이로 설정
         getWindow().getDecorView().setBackgroundColor(Color.parseColor("#1C1C1E"));
         setContentView(R.layout.activity_main);
 
         todoLayout = findViewById(R.id.todoLayout);
         routineGrid = findViewById(R.id.routineGrid);
 
-        // 상단 버튼들을 깔끔하게 정리
         setupTopButton(R.id.btnGoTo2, "#FF9F0A");
         setupTopButton(R.id.btnGoTo3, "#FF9F0A");
         setupTopButton(R.id.btnEdit, "#3A3A3C");
@@ -94,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         if (btn != null) {
             btn.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor(colorStr)));
             btn.setTextColor(Color.WHITE);
-            btn.setAllCaps(false); // 소문자 허용
+            btn.setAllCaps(false);
             GradientDrawable gd = new GradientDrawable();
             gd.setCornerRadius(20f);
             gd.setColor(Color.parseColor(colorStr));
@@ -129,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView btnDel = new TextView(this);
         btnDel.setText("✕");
-        btnDel.setTextColor(Color.parseColor("#8E8E93")); // 보조 텍스트 색상
+        btnDel.setTextColor(Color.parseColor("#8E8E93"));
         btnDel.setTextSize(20);
         btnDel.setVisibility(isEditMode ? View.VISIBLE : View.GONE);
         btnDel.setOnClickListener(v -> {
@@ -175,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView btnDel = new TextView(this);
         btnDel.setText("X");
-        btnDel.setTextColor(Color.parseColor("#FF453A")); // 깔끔한 레드
+        btnDel.setTextColor(Color.parseColor("#FF453A"));
         btnDel.setTextSize(11);
         btnDel.setPadding(0, 0, 0, 10);
         btnDel.setVisibility(isEditMode ? View.VISIBLE : View.GONE);
@@ -235,7 +233,6 @@ public class MainActivity extends AppCompatActivity {
         Snackbar snackbar = Snackbar.make(rootView, message, Snackbar.LENGTH_LONG);
         View snackbarView = snackbar.getView();
 
-        // 미니멀한 디자인: 어두운 배경 + 화이트 텍스트
         GradientDrawable bg = new GradientDrawable();
         bg.setCornerRadius(15f);
         bg.setColor(Color.parseColor("#3A3A3C"));

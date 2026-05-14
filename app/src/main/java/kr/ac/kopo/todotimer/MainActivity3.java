@@ -23,7 +23,7 @@ public class MainActivity3 extends AppCompatActivity {
         NumberPicker pickerMin = findViewById(R.id.pickerMin);
         Button btn = findViewById(R.id.btnSubmitRoutine);
 
-        // 이름 입력창 디자인
+
         etName.setTextColor(Color.WHITE);
         etName.setHintTextColor(Color.parseColor("#8E8E93"));
         GradientDrawable etBg = new GradientDrawable();
@@ -38,7 +38,7 @@ public class MainActivity3 extends AppCompatActivity {
         pickerMin.setMaxValue(59);
         pickerMin.setValue(30);
 
-        // 버튼: 네온 오렌지 강제 적용
+
         btn.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FF9F0A")));
         btn.setTextColor(Color.WHITE);
         btn.setText("START ROUTINE");

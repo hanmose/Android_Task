@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="30dp"
     android:gravity="center"
-    android:background="#1C1C1E"> <!-- 다크 배경 강제 -->
+    android:background="#1C1C1E">
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
             android:id="@+id/pickerHour"
             android:layout_width="wrap_content"
             android:layout_height="160dp"
-            android:theme="@android:style/Theme.Holo.NoActionBar"/> <!-- 구형 테마가 다크에서 숫자색이 더 잘보임 -->
+            android:theme="@android:style/Theme.Holo.NoActionBar"/>
 
         <TextView
             android:layout_width="wrap_content"
